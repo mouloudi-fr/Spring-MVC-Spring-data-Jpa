@@ -15,7 +15,7 @@ import fr.scolarite.dao.EtudiantRepository;
 import fr.scolarite.model.Etudiant;
 
 //
-//Author Mouloudi
+//@Author Mouloudi
 //
 @SpringBootApplication
 public class ScolariteApplication {
@@ -23,9 +23,9 @@ public class ScolariteApplication {
 	public static void main(String[] args) throws ParseException {
 		ApplicationContext ctx=SpringApplication.run(ScolariteApplication.class, args);
 		
-		EtudiantRepository etudiantRepository=ctx.getBean(EtudiantRepository.class);
+	//	EtudiantRepository etudiantRepository=ctx.getBean(EtudiantRepository.class);
 		
-		DateFormat df=new SimpleDateFormat("yyyy-MM-dd");
+		//DateFormat df=new SimpleDateFormat("yyyy-MM-dd");
 		
 		/// Ajouter les données dans la base
 		//etudiantRepository.save(new Etudiant("Ali", "ali@ali", df.parse("2019-01-10"), "ali.jpg"));
